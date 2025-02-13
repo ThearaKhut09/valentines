@@ -115,6 +115,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   font-size: 1.8rem;
   color: #4a4a4a;
+  gap: 1.5rem;
 }
 
 @media (max-width: 768px) {
