@@ -25,7 +25,9 @@ yesBtn.addEventListener("click", () => {
   title.innerHTML = "Yay! I Love You!! 💗";
   btnContainer.classList.add("hidden");
   changeImage("yes");
-  displayReadButton("Hi Pookie! I just wanted to say that I love you so much! You're the best thing that ever happened to me. I'm so grateful to have you in my life. I hope you're having a great day! 😘");
+  displayReadButton(
+    "Hi Pookie! I just wanted to say that I love you so much! You're the best thing that ever happened to me. I'm so grateful to have you in my life. I hope you're having a great day! 😘"
+  );
 });
 
 noBtn.addEventListener("click", () => {
@@ -87,6 +89,7 @@ function displayReadButton(message) {
       messageContainer.innerHTML = `<p>${message}</p>`;
       document.body.appendChild(messageContainer);
       readBtn.disabled = true;
+      readBtn.style.display = "none"; // Hide the button
     }
   });
 }
